@@ -35,9 +35,9 @@ class _MapboxPageState extends State<MapboxPage> {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        automaticallyImplyLeading: false,
         backgroundColor: const Color(0xFF111D2D),
-        title: const Text('Mapbox Integration App',
+        foregroundColor: Colors.white,
+        title: const Text('Mapbox Page',
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
@@ -47,6 +47,7 @@ class _MapboxPageState extends State<MapboxPage> {
       ),
       body: Stack(
         children: [
+          // Bagian map
           MapWidget(
             cameraOptions: CameraOptions(
               center: Point(coordinates: Position(106.8229, -6.1944)),
@@ -57,7 +58,10 @@ class _MapboxPageState extends State<MapboxPage> {
             onMapCreated: _onMapCreated,
             onTapListener: _onTap
           ),
+
+          // Bagian searchbox
           Container(
+            margin: const EdgeInsets.only(right: 50),
             padding: const EdgeInsets.all(10),
             child: Column(
               children: [
