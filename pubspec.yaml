@@ -10,6 +10,12 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Application Packages
+  http: ^1.2.2
+  mapbox_maps_flutter: ^2.5.0
+  searchfield: ^1.2.2
+  provider: ^6.1.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -17,3 +23,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/
