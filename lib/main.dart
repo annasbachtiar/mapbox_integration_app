@@ -8,7 +8,7 @@ import 'package:mapbox_integration_app/services/searching_service.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  String accessToken = const String.fromEnvironment("ACCESS_TOKEN");
+  String accessToken = "pk.eyJ1Ijoia2FybG9kZXYiLCJhIjoiY2xocTN1ZnVjMjB1NDNtcHNoMmI2N2dhcCJ9.5Y8fh8aPfM6f5zDKA_bDiw";
   MapboxOptions.setAccessToken(accessToken);
   
   runApp(const MapboxIntegrationApp());

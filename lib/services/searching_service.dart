@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class SearchingService extends ChangeNotifier {
   String query = ' ';
-  String accessToken = const String.fromEnvironment("ACCESS_TOKEN");
+  String accessToken = "pk.eyJ1Ijoia2FybG9kZXYiLCJhIjoiY2xocTN1ZnVjMjB1NDNtcHNoMmI2N2dhcCJ9.5Y8fh8aPfM6f5zDKA_bDiw";
   TextEditingController controller = TextEditingController();
 
   List<Map<String,dynamic>> suggestions = [];

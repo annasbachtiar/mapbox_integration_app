@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mapbox_maps_flutter/mapbox_maps_flutter.dart';
 
 class DirectionService extends ChangeNotifier {
-  String accessToken = const String.fromEnvironment("ACCESS_TOKEN");
+  String accessToken = "pk.eyJ1Ijoia2FybG9kZXYiLCJhIjoiY2xocTN1ZnVjMjB1NDNtcHNoMmI2N2dhcCJ9.5Y8fh8aPfM6f5zDKA_bDiw";
 
   // Fungsi mendapatkan arah
   Future<List<Point>> getDirection(List<Point> markerPoints) async {
